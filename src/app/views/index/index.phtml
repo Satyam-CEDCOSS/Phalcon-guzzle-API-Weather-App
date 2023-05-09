@@ -1,0 +1,17 @@
+<?php echo $this->tag->form("weather"); ?>
+    <p>
+        <label for="name">Enter Place: </label>
+        <input class="form-control" type="text" name="search">
+    </p>
+    <p class="row px-5">
+        <select class="col-8 mr-5" name="type" id="type">
+            <option value="current">Current weather</option>
+            <option value="forecast">Forecast</option>
+            <option value="history">History</option>
+            <option value="timezone">Time Zone</option>
+            <option value="sports">Sports</option>
+            <option value="astronomy">Astronomy</option>
+        </select>
+        <?php echo $this->tag->submitButton(["Submit",'class'=>'col-3 btn btn-primary']); ?>
+    </p>
+</form>
